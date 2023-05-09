@@ -23,7 +23,7 @@ socketMain();
 
 app
   .get("/", function (req, res, next) {
-    res.send("성공");
+    res.send(`<h1>성공</h1>`);
   })
   .post("/", upload.single("file"), function (req, res, next) {
     res.send({ message: "done" });
