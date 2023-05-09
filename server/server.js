@@ -1,7 +1,7 @@
 const express = require("express");
 
-// mongoose
-const main = require("./mongooseMain");
+// // mongoose
+// const main = require("./mongooseMain");
 
 // socket
 const socketMain = require("./socket");
@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // main.main();
-main().catch((err) => console.log(err));
+// main().catch((err) => console.log(err));
 // socket
 socketMain();
 
