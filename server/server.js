@@ -21,14 +21,9 @@ app.use(express.urlencoded({ extended: true }));
 // socket
 socketMain();
 
-app
-  .get("/", function (req, res, next) {
+app.get("/", function (req, res, next) {
     res.send(`<h1>성공</h1>`);
-  })
-  .post("/", upload.single("file"), function (req, res, next) {
-    res.send({ message: "done" });
-  });
-app.get("test", (req, res) => {});
+})
 
 app.listen(port, () => {
   // console.log(a)
