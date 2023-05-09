@@ -32,25 +32,3 @@ const socketMain = () => {
 };
 
 module.exports = socketMain
-
-// function socketMain () {
-//   const server = http.createServer(app);
-//   const { Server } = require("socket.io");
-  
-//   const io = new Server({
-//     cors: {
-//       origin: "http://localhost:3000",
-//     },
-//   });
-  
-//   io.listen(9000);
-  
-//   io.on("connection", (socket) => {
-//     console.log("a user connected");
-//     socket.on("msg", (msg) => {
-//       console.log(msg);
-//     });
-//   });  
-// }
-
-// export {socketMain}
